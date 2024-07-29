@@ -2,6 +2,7 @@ import PieChart from './DashboardPieChart'
 import student from '../../../assets/student.jpg'
 import { formatDistanceToNow } from 'date-fns'
 import { ChevronRight } from 'lucide-react'
+import Sidebar from '../Sidebar/Sidebar'
 
 const statsData = [
     {
@@ -55,7 +56,11 @@ const filteredActivityData = activityData.length > 3 ? activityData.slice(0, 3) 
 
 const Dashboard = () => {
     return (
+        <div className="flex gap-5 justify-start mx-6">
+            <Sidebar/>
+            
         <div>
+            
             <div className="flex flex-col lg:flex-row lg:justify-around mt-10 lg:space-x-4  space-y-4 text-center mx-2">
                 {
                     statsData.map((dataField, index) => (
@@ -100,6 +105,7 @@ const Dashboard = () => {
                     <PieChart />
                 </div>
             </div>
+        </div>
         </div>
     )
 }

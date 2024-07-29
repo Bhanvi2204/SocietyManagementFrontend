@@ -131,7 +131,7 @@ const LoginPage: React.FC = () => {
   } = useLogin();
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className="flex-col md:flex-row">
       <div style={styles.leftSide}>
         <div
           style={styles.formContainer}

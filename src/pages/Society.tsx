@@ -133,7 +133,7 @@ const Society = () => {
   if (!society) return <div>Loading...</div>;
   const path = location.pathname === `/society/${id}`
   return (
-    <div>
+    <div >
    
       <Outlet/>
       {path && (

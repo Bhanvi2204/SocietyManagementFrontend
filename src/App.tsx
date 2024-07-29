@@ -49,6 +49,7 @@ import ResetPasswordPage from "./pages/ResetPassword";
 import OTP from "./pages/OTP";
 import ChangePassword from "./pages/ChangePassword";
 import Admin_Coordinators from "./Admin_Panel/Page/Coordinators";
+import Admin_Setting from "./Admin_Panel/Page_Components/Settings/Settings";
 
 const App = () => {
   const location = useLocation();
@@ -63,6 +64,8 @@ const App = () => {
         <Route path="/admin/members" element={<Admin_Members />} />
         <Route path="/admin/queries" element={<Admin_Queries />} />
         <Route path="/admin/coordinators" element={<Admin_Coordinators />} />
+        <Route path="/admin/setting" element={<Admin_Setting />} />
+
         <Route path="/admin" element={<Activity_Feed />} />
       </Routes>
     );

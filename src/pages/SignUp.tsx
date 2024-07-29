@@ -6,8 +6,6 @@ import OTP from "./OTP";
 const styles = {
   container: {
     display: "flex",
-    height: "100vh",
-    overflow: "hidden",
   },
   leftSide: {
     flex: "1",
@@ -198,7 +196,7 @@ const SignupPage: React.FC = () => {
   return (
     <>
       {!OTPSent ? (
-        <div style={styles.container}>
+        <div style={styles.container} className="flex-col md:flex-row">
           <div style={styles.leftSide}>
             <div style={styles.formWrapper}>
               <img

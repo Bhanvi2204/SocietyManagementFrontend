@@ -7,7 +7,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     display: "flex",
     height: "100vh",
-    overflow: "hidden",
+
   },
   leftSide: {
     flex: 1,
@@ -156,7 +156,7 @@ const ResetPasswordPage: React.FC = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className="flex-col md:flex-row">
       <div style={styles.leftSide}>
         <div style={styles.formContainer}>
           <img
